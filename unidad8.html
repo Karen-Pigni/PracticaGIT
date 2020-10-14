@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Unidad 3 - Codo a Codo</title>
+    <style>
+        form{
+            font-size: 18px;
+            /*text-align: center;*/
+            border: 3px dashed black;
+            width: 30%;
+            margin: 0 auto;
+            background-color: rgba(235, 233, 233, 0.527);
+            box-shadow: 2px 0px 23px 0px rgba(0,0,0,0.75);
+        }
+        label{
+            padding:10px;
+        }
+        input[type='email']{width: 74%; margin-top: 20px;}
+        input[type='password']{width: 78%;}
+        input[type='submit']{
+            display: block;
+            width: 30%; 
+            margin: 0 auto;
+            height: 30px;
+            background-color: orange;
+            color:white;
+            font-size: 15px;
+            font-weight: 700;
+            border: 1px orangered solid;
+            border-radius: 5px;
+            margin: 20px auto;
+        }
+        h1{
+            text-align: center;
+            margin-top: 10%;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Autora: Karen Pigni -->
+    <h1>Ingreso al sistema</h1>
+
+    <form action="" id="formulario">
+        <br><br>
+        <label for="">Usuario</label>
+        <input type="email" id="usuario">
+        <small style="color: #333; margin-left: 90px;" id="small_user"></small>
+        <br>
+        <br>
+        <label for="">Clave</label>
+        <input type="password" id="password">
+        <small style="color: #333; margin-left: 90px;" id="small_pass"></small>
+        <br>
+        <input type="submit" value="Ingresar" id="boton" onclick="return validarForm();">
+        <small style="color: #333;  margin-left: 110px;" id="small_but"></small>
+        <br><br>
+    </form>
+    
+    <script src="control.js"></script>
+</body>
+</html>
